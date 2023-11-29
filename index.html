@@ -1,0 +1,739 @@
+<!doctype html>
+<html dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="w-full  pb-10 pt-5 px-10  bg-orange-100  flex-wrap">
+        <div class="flex  mb-5 w-full">
+            <div onclick="changelang()" class=" ms-auto font-bold cursor-pointer"> Ar / En</div>
+        </div>
+        <div class="flex flex-wrap items-center mb-5 w-full">
+            <div class="w-full md:w-9/12">
+                <div class="flex items-center">
+                    <img class="w-auto rounded-lg h-12 object-contain"
+                        src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+                    <h4 class="text-2xl mb-0 ms-3 font-bold">
+                        We Curl</h4>
+                </div>
+                <div class="flex mt-2 items-center">
+                    <svg class="w-5  h-5  " id="fi_4922177" enable-background="new 0 0 512 512" height="512"
+                        viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="m256 240c33.084 0 60-26.916 60-60s-26.916-60-60-60-60 26.916-60 60 26.916 60 60 60zm0-80c11.028 0 20 8.972 20 20s-8.972 20-20 20-20-8.972-20-20 8.972-20 20-20z">
+                            </path>
+                            <path
+                                d="m436 180c0-99.252-80.748-180-180-180s-180 80.748-180 180c0 39.265 12.422 76.581 35.924 107.914l96.058 128.067c11.283 15.04 29.234 24.019 48.018 24.019s36.735-8.979 48.019-24.021l96.057-128.065c23.502-31.333 35.924-68.649 35.924-107.914zm-67.923 83.912-96.056 128.064c-3.826 5.1-9.665 8.024-16.021 8.024s-12.195-2.924-16.02-8.022l-96.057-128.066c-18.267-24.354-27.923-53.371-27.923-83.912 0-77.196 62.804-140 140-140s140 62.804 140 140c0 30.541-9.656 59.558-27.923 83.912z">
+                            </path>
+                            <path
+                                d="m356 492c0-11.046-8.954-20-20-20h-160c-11.046 0-20 8.954-20 20s8.954 20 20 20h160c11.046 0 20-8.954 20-20z">
+                            </path>
+                        </g>
+                    </svg>
+
+                    <h4 class="text-base mb-0 ms-3 text-black34"> Alsahafa , Riyadh</h4>
+                </div>
+                <div class="flex mt-2 items-center">
+                    <svg class="w-5  h-5   " version="1.1" id="fi_992700" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978
+                            c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952
+                            C357.766,320.208,355.981,307.775,347.216,301.211z"></path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341
+                            c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341
+                            S375.275,472.341,256,472.341z"></path>
+                            </g>
+
+                    </svg>
+                    <h4 class="text-base mb-0 ms-3 text-black34"> 2:00 PM to 10:00 PM</h4>
+                </div>
+            </div>
+            <img class="w-full md:w-3/12 mt-5 md:mt-0 ms-auto rounded-lg h-full object-cover"
+                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+        </div>
+    </div>
+    <div class="w-full flex px-1 md:px-8 py-6">
+        <div class="hidden md:block w-3/12 relative">
+            <h4 class="text-xl font-bold">Services</h4>
+            <div id="scrollcontiner" class="w-full mt-10 top-0 start-0 ">
+                <div onclick="scrolltocatlog(1,this)" class="w-full py-2.5 px-3 serv active">
+                    <p class="text-base"> Catlog 1</p>
+                </div>
+                <div onclick="scrolltocatlog(2,this)" class="w-full py-2.5 px-3 serv ">
+                    <p class="text-base"> Catlog 2</p>
+                </div>
+                <div onclick="scrolltocatlog(3,this)" class="w-full py-2.5 px-3 serv ">
+                    <p class="text-base"> Catlog 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="md:px-10 w-full md:w-6/12">
+            <div class="w-full mt-[68px]">
+                <div data-catlog onclick="formacheck(this)"
+                    class="gg w-full cursor-pointer py-2.5 px-3 relative border-b border-black/10">
+                    <p class="text-base font-bold text-black">Catlog 1</p>
+                    <div class="absolute top-0 bottom-0 flex items-center end-2">
+                        <svg class="w-5 h-5" height="512" viewBox="0 0 512 512" width="512"
+                            xmlns="http://www.w3.org/2000/svg" id="fi_8567254">
+                            <path
+                                d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0l139.78-163.12c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div data-colab class=" transform duration-700 transition-all overflow-hidden products next">
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww w-8/12 md:w-auto">
+                            <p class="text-lg font-bold">product name1</p>
+                            <p class="text-sm "> Disciption777</p>
+                            <div class=" flex-wrap flex items-center gap-2 my-2">
+
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="1" value="1">1</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="2" value="2">2</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="3" value="3">3</option>
+                                </select>
+
+                                <div class="w-full flex gap-2 items-center md:w-auto">
+                                    <p class="text-xs "> color</p>
+                                    <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                        <option value="g">white</option>
+                                        <option value="g">2</option>
+                                        <option value="g">3</option>
+                                    </select>
+                                </div>
+                                <div class="w-full flex gap-2 items-center md:w-auto">
+                                    <p class="text-xs "> size</p>
+                                    <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                        <option value="g">ww</option>
+                                        <option value="g">2</option>
+                                        <option value="g">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$3.00</p>
+                    </div>
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww w-8/12 md:w-auto">
+                            <p class="text-lg font-bold">product name1</p>
+                            <p class="text-sm "> Disciption777</p>
+                            <div class=" flex-wrap flex items-center gap-2 my-2">
+
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="1" value="1">1</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="2" value="2">2</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="3" value="3">3</option>
+                                </select>
+
+                                <div class="w-full md:w-auto">
+                                    <p class="text-xs "> color</p>
+                                    <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                        <option value="g">white</option>
+                                        <option value="g">2</option>
+                                        <option value="g">3</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-auto">
+                                    <p class="text-xs "> size</p>
+                                    <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                        <option value="g">ww</option>
+                                        <option value="g">2</option>
+                                        <option value="g">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$3.00</p>
+                    </div>
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww w-8/12 md:w-auto">
+                            <p class="text-lg font-bold">product name1</p>
+                            <p class="text-sm "> Disciption777</p>
+                            <div class=" flex-wrap flex items-center gap-2 my-2">
+
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="1" value="1">1</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="2" value="2">2</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="3" value="3">3</option>
+                                </select>
+
+                                <div class="w-full md:w-auto">
+                                    <p class="text-xs "> color</p>
+                                    <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                        <option value="g">white</option>
+                                        <option value="g">2</option>
+                                        <option value="g">3</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-auto">
+                                    <p class="text-xs "> size</p>
+                                    <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                        <option value="g">ww</option>
+                                        <option value="g">2</option>
+                                        <option value="g">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$3.00</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="w-full mt-[10px]">
+                <div data-catlog onclick="formacheck(this)"
+                    class="gg w-full cursor-pointer py-2.5 px-3 relative border-b border-black/10">
+                    <p class="text-base font-bold text-black">Catlog 2</p>
+                    <div class="absolute top-0 bottom-0 flex items-center end-2">
+                        <svg class="w-5 h-5" height="512" viewBox="0 0 512 512" width="512"
+                            xmlns="http://www.w3.org/2000/svg" id="fi_8567254">
+                            <path
+                                d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0l139.78-163.12c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div data-colab class="  transform duration-700 transition-all  overflow-hidden products next">
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww">
+                            <p class="text-lg font-bold">product name1</p>
+                            <p class="text-sm "> Disciption777</p>
+                            <div class=" flex items-center gap-2 my-2">
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="1" value="1">1</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="2" value="2">2</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="3" value="3">3</option>
+                                </select>
+                                <p class="text-xs "> color</p>
+                                <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                    <option value="g">white</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                                <p class="text-xs "> size</p>
+                                <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option value="g">ww</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$3.00</p>
+                    </div>
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww">
+                            <p class="text-lg font-bold"> product name99</p>
+                            <p class="text-sm "> Disciption99</p>
+                            <div class=" flex items-center gap-2 my-2">
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="90" data-name="product name99" data-disc="Disciption99"
+                                        data-qte="8" value="1">8</option>
+                                    <option data-price="90" data-name="product name99" data-disc="Disciption99"
+                                        data-qte="9" value="2">9</option>
+                                    <option data-price="90" data-name="product name99" data-disc="Disciption99"
+                                        data-qte="99" value="3">99</option>
+                                </select>
+                                <p class="text-xs "> color</p>
+                                <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                    <option value="g">white</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                                <p class="text-xs "> size</p>
+                                <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option value="g">ww</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$90.00</p>
+                    </div>
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww">
+                            <p class="text-lg font-bold">product name</p>
+                            <p class="text-sm "> Disciption6</p>
+                            <div class=" flex items-center gap-2 my-2">
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="10" data-name="product name" data-disc="Disciption6"
+                                        data-qte="4" value="1">4</option>
+                                    <option data-price="10" data-name="product name" data-disc="Disciption6"
+                                        data-qte="5" value="2">5</option>
+                                    <option data-price="10" data-name="product name" data-disc="Disciption6"
+                                        data-qte="6" value="3">6</option>
+                                </select>
+                                <p class="text-xs "> color</p>
+                                <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                    <option value="g">white</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                                <p class="text-xs "> size</p>
+                                <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option value="g">ww</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$10.00</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="w-full mt-[10px]">
+                <div data-catlog onclick="formacheck(this)"
+                    class="gg w-full cursor-pointer py-2.5 px-3 relative border-b border-black/10">
+                    <p class="text-base font-bold text-black">Catlog 3</p>
+                    <div class="absolute top-0 bottom-0 flex items-center end-2">
+                        <svg class="w-5 h-5" height="512" viewBox="0 0 512 512" width="512"
+                            xmlns="http://www.w3.org/2000/svg" id="fi_8567254">
+                            <path
+                                d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0l139.78-163.12c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div data-colab class="  transform duration-700 transition-all  overflow-hidden products next">
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww">
+                            <p class="text-lg font-bold">product name1</p>
+                            <p class="text-sm "> Disciption777</p>
+                            <div class=" flex items-center gap-2 my-2">
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="1" value="1">1</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="2" value="2">2</option>
+                                    <option data-price="3" data-name="product name1" data-disc="Disciption777"
+                                        data-qte="3" value="3">3</option>
+                                </select>
+                                <p class="text-xs "> color</p>
+                                <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                    <option value="g">white</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                                <p class="text-xs "> size</p>
+                                <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option value="g">ww</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$3.00</p>
+                    </div>
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww">
+                            <p class="text-lg font-bold"> product name99</p>
+                            <p class="text-sm "> Disciption99</p>
+                            <div class=" flex items-center gap-2 my-2">
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="90" data-name="product name99" data-disc="Disciption99"
+                                        data-qte="8" value="1">8</option>
+                                    <option data-price="90" data-name="product name99" data-disc="Disciption99"
+                                        data-qte="9" value="2">9</option>
+                                    <option data-price="90" data-name="product name99" data-disc="Disciption99"
+                                        data-qte="99" value="3">99</option>
+                                </select>
+                                <p class="text-xs "> color</p>
+                                <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                    <option value="g">white</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                                <p class="text-xs "> size</p>
+                                <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option value="g">ww</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$90.00</p>
+                    </div>
+                    <div class="w-full ss py-2.5 px-3 flex border-b border-black/10 pb-5 pt-5 items-center">
+                        <label class="containercheck">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="w-24 h-24">
+                            <img class="w-auto h-full object-contain"
+                                src="https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043" />
+
+                        </div>
+                        <div class="ww">
+                            <p class="text-lg font-bold">product name</p>
+                            <p class="text-sm "> Disciption6</p>
+                            <div class=" flex items-center gap-2 my-2">
+                                <p class="text-xs "> Qte</p>
+                                <select class="px-3 qtechange bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option data-price="10" data-name="product name" data-disc="Disciption6"
+                                        data-qte="4" value="1">4</option>
+                                    <option data-price="10" data-name="product name" data-disc="Disciption6"
+                                        data-qte="5" value="2">5</option>
+                                    <option data-price="10" data-name="product name" data-disc="Disciption6"
+                                        data-qte="6" value="3">6</option>
+                                </select>
+                                <p class="text-xs "> color</p>
+                                <select class="px-3 bg-white border py-0.5 text-sm h-9 border-gray-200 rounded-md">
+                                    <option value="g">white</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                                <p class="text-xs "> size</p>
+                                <select class="px-3 bg-white border py-0.5 h-9 border-gray-200 rounded-md">
+                                    <option value="g">ww</option>
+                                    <option value="g">2</option>
+                                    <option value="g">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold ms-auto">$10.00</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="w-full md:w-3/12">
+            <div id="scrollcontiner2" class="w-full ">
+                <div class=" hidden md:block">
+                <div id="empty" class="w-full ">
+                    <h4 class="text-lg">Your Cart is Empty</h4>
+                    <div id="scroll2" class="w-full mt-10">
+                        <svg class="w-8 h-8 mx-auto my-5" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+                            width="512" height="512">
+                            <g>
+                                <path
+                                    style="fill:none;stroke:#000000;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                                    d="&#10;&#9;&#9;M216,143.982C216,163.874,199.874,180,179.982,180H56.018C36.126,180,20,163.874,20,143.982V56.018C20,36.126,36.126,20,56.018,20&#10;&#9;&#9;h123.963C199.874,20,216,36.126,216,56.018V143.982z" />
+                                <path
+                                    style="fill:none;stroke:#000000;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                                    d="&#10;&#9;&#9;M492,255.982C492,275.874,475.874,292,455.982,292H328.018C308.126,292,292,275.874,292,255.982V56.018&#10;&#9;&#9;C292,36.126,308.126,20,328.018,20h127.963C475.874,20,492,36.126,492,56.018V255.982z" />
+                                <path
+                                    style="fill:none;stroke:#000000;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                                    d="&#10;&#9;&#9;M492,455.982C492,475.874,475.874,492,455.982,492H328.018C308.126,492,292,475.874,292,455.982v-47.963&#10;&#9;&#9;C292,388.126,308.126,372,328.018,372h127.963C475.874,372,492,388.126,492,408.018V455.982z" />
+                                <path
+                                    style="fill:none;stroke:#000000;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                                    d="&#10;&#9;&#9;M216,455.982C216,475.874,199.874,492,179.982,492H56.018C36.126,492,20,475.874,20,455.982V292.018&#10;&#9;&#9;C20,272.126,36.126,256,56.018,256h123.963C199.874,256,216,272.126,216,292.018V455.982z" />
+                            </g>
+
+
+                        </svg>
+                        <p class="text-sm mb-5 text-center">Good looks always gives you the confidence! Go ahead, Select
+                            some services.</p>
+                    </div>
+                </div>
+            </div>
+                <div id="form" class="w-full hidden">
+                    <form class="w-full">
+                        <h4 class="text-lg font-semibold">Cart</h4>
+                        <p class="text-sm text-gray-500"><span id="listlength">3</span> Prodcats</p>
+                        <div id="forma" class="hidden md:block w-full mt-5">
+
+
+
+                        </div>
+                        <div class="w-full">
+                            <div class="w-full flex items-center justify-between mt-4">
+                                <p class="text-sm text-gray-500">Tax</p>
+                                <p class="text-sm text-gray-500">$<span id="tax">3</span></p>
+                            </div>
+                            <div class="w-full flex items-center mt-2 justify-between">
+                                <p class="text-[15px] font-semibold text-black">Total</p>
+                                <p class="text-sm text-black font-bold text-[15px]">$<span id="total">3</span></p>
+                            </div>
+                            <button class="w-full bg-orange-400 h-12 rounded-lg text-white mt-3">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed hidden"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+<script src="./myfunctions.js"></script>
+<script>
+    const useState = (defaultValue) => {
+        let value = defaultValue;
+        const getValue = () => value
+        const setValue = newValue => value = newValue
+        return [getValue, setValue];
+    }
+    const [forma, setForma] = useState([]);
+    let catlogs = document.querySelectorAll("[data-catlog]");
+    let colabs = document.querySelectorAll("[data-colab]");
+    let serv = document.querySelectorAll(".serv");
+    let list3 = ['max-h-screen', 'overflow-y-scroll', 'pe-4', 'pb-14'];
+
+
+
+
+
+    $(document).scroll(function () {
+        // Check if the scroll position is greater than or equal to 360
+        if ($(window).scrollTop() >= 420) {
+            // Define new class lists for different scenarios
+            let newlist = ["w-[24%]", "mt-10", "fixed", "top-0", 'start-8'];
+            let newlist2 = ["w-full","md:w-[24%]", "mt-10", "fixed",'bottom-0', "md:top-0",'bg-white' ,'py-4','px-4','md:p-0','end-0', 'md:end-8'];
+
+            // Remove and add classes to #scrollcontiner
+            $('#scrollcontiner').removeClass();
+            $('#scrollcontiner').addClass(newlist.join(" "));
+
+            // Remove classes from #scrollcontiner2
+            $('#scrollcontiner2').removeClass();
+
+            // Add classes to #scrollcontiner2 based on the length of forma()
+            if (forma().length > 5) {
+                $('#scrollcontiner2').addClass(list3.join(" "));
+            }
+            $('#scrollcontiner2').addClass(newlist2.join(" "));
+        } else {
+            // If scroll position is less than 360
+            let newlist = ["w-full", "mt-10"];
+            let newlist2 = ["w-full"];
+
+            // Remove and add classes to #scrollcontiner
+            $('#scrollcontiner').removeClass();
+            $('#scrollcontiner').addClass(newlist.join(" "));
+
+            // Remove and add classes to #scrollcontiner2
+            $('#scrollcontiner2').removeClass();
+            $('#scrollcontiner2').addClass(newlist2.join(" "));
+        }
+    });
+    // Wait for the document to be ready
+    $(document).ready(function () {
+
+        // Event handler for checkbox changes
+        $('input[type="checkbox"]').change(function () {
+            if ($(this).is(':checked')) {
+                // If the checkbox is checked
+                let obj;
+
+                // Find the first select element in the same row
+                let firstSelect = $(this).parent().siblings('.ww').find('select:first');
+
+                // Extract data from the selected option
+                let qte = firstSelect.find('option:selected').data('qte');
+                let price = firstSelect.find('option:selected').data('price');
+                let name = firstSelect.find('option:selected').data('name');
+                let disc = firstSelect.find('option:selected').data('disc');
+                let total = Number(qte) * Number(price);
+
+                // Generate a unique ID or use the existing data-id if available
+                const timestamp = new Date().getTime();
+                if ($(this).data('id')) {
+                    obj = {
+                        id: $(this).data('id'),
+                        qte,
+                        price,
+                        total,
+                        name,
+                        disc
+                    };
+                    addRow($(this).data('id'), qte, price, name, disc, total);
+                } else {
+                    const uniqueId = 'id_' + timestamp;
+                    firstSelect.attr("data-id", uniqueId);
+                    $(this).attr("data-id", uniqueId);
+                    obj = {
+                        id: uniqueId,
+                        qte,
+                        price,
+                        total,
+                        name,
+                        disc
+                    };
+                    addRow(uniqueId, qte, price, name, disc, total);
+                }
+
+                // Update the state with the new object
+                setForma([...forma(), obj]);
+
+                // Update UI elements
+                changelength();
+                calculateTotal();
+            } else {
+                // If the checkbox is unchecked
+                let id = $(this).data('id');
+
+                // Remove the item from the state
+                removeElement(forma(), id);
+
+                // Update UI elements
+                changelength();
+                $(`[data-remove="${id}"]`).remove();
+                calculateTotal();
+            }
+        });
+
+        // Event handler for select element changes with class 'qtechange'
+        $('.qtechange').change(function () {
+            let grandparent = $(this).parent().parent().parent();
+            let checkbox = grandparent.find('input[type="checkbox"]');
+
+            // Check if the associated checkbox is checked
+            if (checkbox.is(':checked')) {
+                let id = $(this).data('id');
+
+                // Extract data from the selected option
+                let selectedQte = $(this).find('option:selected').data('qte');
+                let selectedPrice = $(this).find('option:selected').data('price');
+
+                // Update the state with the new quantity
+                const updatedArray = updateQte(forma(), id, selectedQte);
+
+                // Update UI elements
+                $(`[data-changer="${id}"]`).text(selectedQte);
+                $(`[data-changer2="${id}"]`).text((Number(selectedQte) * Number(selectedPrice)).toFixed(2));
+
+                calculateTotal();
+            }
+        });
+    });
+
+
+
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+        direction: "vertical",
+        gestureDirection: "vertical",
+        smooth: true,
+        smoothTouch: false,
+        touchMultiplier: 2,
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+</script>
+
+</html>
